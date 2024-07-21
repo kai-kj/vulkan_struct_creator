@@ -4,6 +4,14 @@
 #include <vulkan/vk_platform.h>
 #include <vulkan/vulkan.h>
 
+VkApplicationInfo vscApplicationInfo(
+    const char* pApplicationName,
+    uint32_t applicationVersion,
+    const char* pEngineName,
+    uint32_t engineVersion,
+    uint32_t apiVersion
+);
+
 VkDeviceQueueCreateInfo vscDeviceQueueCreateInfo(
     VkDeviceQueueCreateFlags flags,
     uint32_t queueFamilyIndex,
@@ -29,6 +37,23 @@ VkInstanceCreateInfo vscInstanceCreateInfo(
     const char* const* ppEnabledLayerNames,
     uint32_t enabledExtensionCount,
     const char* const* ppEnabledExtensionNames
+);
+
+VkMemoryAllocateInfo vscMemoryAllocateInfo(
+    VkDeviceSize allocationSize,
+    uint32_t memoryTypeIndex
+);
+
+VkDescriptorBufferInfo vscDescriptorBufferInfo(
+    VkBuffer buffer,
+    VkDeviceSize offset,
+    VkDeviceSize range
+);
+
+VkDescriptorImageInfo vscDescriptorImageInfo(
+    VkSampler sampler,
+    VkImageView imageView,
+    VkImageLayout imageLayout
 );
 
 VkBufferCreateInfo vscBufferCreateInfo(
@@ -73,6 +98,37 @@ VkImageViewCreateInfo vscImageViewCreateInfo(
     VkImageSubresourceRange subresourceRange
 );
 
+VkSparseBufferMemoryBindInfo vscSparseBufferMemoryBindInfo(
+    VkBuffer buffer,
+    uint32_t bindCount,
+    const VkSparseMemoryBind* pBinds
+);
+
+VkSparseImageOpaqueMemoryBindInfo vscSparseImageOpaqueMemoryBindInfo(
+    VkImage image,
+    uint32_t bindCount,
+    const VkSparseMemoryBind* pBinds
+);
+
+VkSparseImageMemoryBindInfo vscSparseImageMemoryBindInfo(
+    VkImage image,
+    uint32_t bindCount,
+    const VkSparseImageMemoryBind* pBinds
+);
+
+VkBindSparseInfo vscBindSparseInfo(
+    uint32_t waitSemaphoreCount,
+    const VkSemaphore* pWaitSemaphores,
+    uint32_t bufferBindCount,
+    const VkSparseBufferMemoryBindInfo* pBufferBinds,
+    uint32_t imageOpaqueBindCount,
+    const VkSparseImageOpaqueMemoryBindInfo* pImageOpaqueBinds,
+    uint32_t imageBindCount,
+    const VkSparseImageMemoryBindInfo* pImageBinds,
+    uint32_t signalSemaphoreCount,
+    const VkSemaphore* pSignalSemaphores
+);
+
 VkShaderModuleCreateInfo vscShaderModuleCreateInfo(
     VkShaderModuleCreateFlags flags,
     size_t codeSize,
@@ -90,6 +146,19 @@ VkDescriptorPoolCreateInfo vscDescriptorPoolCreateInfo(
     uint32_t maxSets,
     uint32_t poolSizeCount,
     const VkDescriptorPoolSize* pPoolSizes
+);
+
+VkDescriptorSetAllocateInfo vscDescriptorSetAllocateInfo(
+    VkDescriptorPool descriptorPool,
+    uint32_t descriptorSetCount,
+    const VkDescriptorSetLayout* pSetLayouts
+);
+
+VkSpecializationInfo vscSpecializationInfo(
+    uint32_t mapEntryCount,
+    const VkSpecializationMapEntry* pMapEntries,
+    size_t dataSize,
+    const void* pData
 );
 
 VkPipelineShaderStageCreateInfo vscPipelineShaderStageCreateInfo(
@@ -236,6 +305,34 @@ VkCommandPoolCreateInfo vscCommandPoolCreateInfo(
     uint32_t queueFamilyIndex
 );
 
+VkCommandBufferAllocateInfo vscCommandBufferAllocateInfo(
+    VkCommandPool commandPool,
+    VkCommandBufferLevel level,
+    uint32_t commandBufferCount
+);
+
+VkCommandBufferInheritanceInfo vscCommandBufferInheritanceInfo(
+    VkRenderPass renderPass,
+    uint32_t subpass,
+    VkFramebuffer framebuffer,
+    VkBool32 occlusionQueryEnable,
+    VkQueryControlFlags queryFlags,
+    VkQueryPipelineStatisticFlags pipelineStatistics
+);
+
+VkCommandBufferBeginInfo vscCommandBufferBeginInfo(
+    VkCommandBufferUsageFlags flags,
+    const VkCommandBufferInheritanceInfo* pInheritanceInfo
+);
+
+VkRenderPassBeginInfo vscRenderPassBeginInfo(
+    VkRenderPass renderPass,
+    VkFramebuffer framebuffer,
+    VkRect2D renderArea,
+    uint32_t clearValueCount,
+    const VkClearValue* pClearValues
+);
+
 VkRenderPassCreateInfo vscRenderPassCreateInfo(
     VkRenderPassCreateFlags flags,
     uint32_t attachmentCount,
@@ -275,12 +372,32 @@ VkFramebufferCreateInfo vscFramebufferCreateInfo(
     uint32_t layers
 );
 
+VkSubmitInfo vscSubmitInfo(
+    uint32_t waitSemaphoreCount,
+    const VkSemaphore* pWaitSemaphores,
+    const VkPipelineStageFlags* pWaitDstStageMask,
+    uint32_t commandBufferCount,
+    const VkCommandBuffer* pCommandBuffers,
+    uint32_t signalSemaphoreCount,
+    const VkSemaphore* pSignalSemaphores
+);
+
 VkDevicePrivateDataCreateInfo vscDevicePrivateDataCreateInfo(
     uint32_t privateDataSlotRequestCount
 );
 
 VkPrivateDataSlotCreateInfo vscPrivateDataSlotCreateInfo(
     VkPrivateDataSlotCreateFlags flags
+);
+
+VkPhysicalDeviceExternalImageFormatInfo vscPhysicalDeviceExternalImageFormatInfo(
+    VkExternalMemoryHandleTypeFlagBits handleType
+);
+
+VkPhysicalDeviceExternalBufferInfo vscPhysicalDeviceExternalBufferInfo(
+    VkBufferCreateFlags flags,
+    VkBufferUsageFlags usage,
+    VkExternalMemoryHandleTypeFlagBits handleType
 );
 
 VkExternalMemoryImageCreateInfo vscExternalMemoryImageCreateInfo(
@@ -291,8 +408,20 @@ VkExternalMemoryBufferCreateInfo vscExternalMemoryBufferCreateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
 );
 
+VkExportMemoryAllocateInfo vscExportMemoryAllocateInfo(
+    VkExternalMemoryHandleTypeFlags handleTypes
+);
+
+VkPhysicalDeviceExternalSemaphoreInfo vscPhysicalDeviceExternalSemaphoreInfo(
+    VkExternalSemaphoreHandleTypeFlagBits handleType
+);
+
 VkExportSemaphoreCreateInfo vscExportSemaphoreCreateInfo(
     VkExternalSemaphoreHandleTypeFlags handleTypes
+);
+
+VkPhysicalDeviceExternalFenceInfo vscPhysicalDeviceExternalFenceInfo(
+    VkExternalFenceHandleTypeFlagBits handleType
 );
 
 VkExportFenceCreateInfo vscExportFenceCreateInfo(
@@ -306,6 +435,59 @@ VkRenderPassMultiviewCreateInfo vscRenderPassMultiviewCreateInfo(
     const int32_t* pViewOffsets,
     uint32_t correlationMaskCount,
     const uint32_t* pCorrelationMasks
+);
+
+VkMemoryAllocateFlagsInfo vscMemoryAllocateFlagsInfo(
+    VkMemoryAllocateFlags flags,
+    uint32_t deviceMask
+);
+
+VkBindBufferMemoryInfo vscBindBufferMemoryInfo(
+    VkBuffer buffer,
+    VkDeviceMemory memory,
+    VkDeviceSize memoryOffset
+);
+
+VkBindBufferMemoryDeviceGroupInfo vscBindBufferMemoryDeviceGroupInfo(
+    uint32_t deviceIndexCount,
+    const uint32_t* pDeviceIndices
+);
+
+VkBindImageMemoryInfo vscBindImageMemoryInfo(
+    VkImage image,
+    VkDeviceMemory memory,
+    VkDeviceSize memoryOffset
+);
+
+VkBindImageMemoryDeviceGroupInfo vscBindImageMemoryDeviceGroupInfo(
+    uint32_t deviceIndexCount,
+    const uint32_t* pDeviceIndices,
+    uint32_t splitInstanceBindRegionCount,
+    const VkRect2D* pSplitInstanceBindRegions
+);
+
+VkDeviceGroupRenderPassBeginInfo vscDeviceGroupRenderPassBeginInfo(
+    uint32_t deviceMask,
+    uint32_t deviceRenderAreaCount,
+    const VkRect2D* pDeviceRenderAreas
+);
+
+VkDeviceGroupCommandBufferBeginInfo vscDeviceGroupCommandBufferBeginInfo(
+    uint32_t deviceMask
+);
+
+VkDeviceGroupSubmitInfo vscDeviceGroupSubmitInfo(
+    uint32_t waitSemaphoreCount,
+    const uint32_t* pWaitSemaphoreDeviceIndices,
+    uint32_t commandBufferCount,
+    const uint32_t* pCommandBufferDeviceMasks,
+    uint32_t signalSemaphoreCount,
+    const uint32_t* pSignalSemaphoreDeviceIndices
+);
+
+VkDeviceGroupBindSparseInfo vscDeviceGroupBindSparseInfo(
+    uint32_t resourceDeviceIndex,
+    uint32_t memoryDeviceIndex
 );
 
 VkDeviceGroupDeviceCreateInfo vscDeviceGroupDeviceCreateInfo(
@@ -329,12 +511,21 @@ VkRenderPassInputAttachmentAspectCreateInfo vscRenderPassInputAttachmentAspectCr
     const VkInputAttachmentAspectReference* pAspectReferences
 );
 
+VkMemoryDedicatedAllocateInfo vscMemoryDedicatedAllocateInfo(
+    VkImage image,
+    VkBuffer buffer
+);
+
 VkImageViewUsageCreateInfo vscImageViewUsageCreateInfo(
     VkImageUsageFlags usage
 );
 
 VkPipelineTessellationDomainOriginStateCreateInfo vscPipelineTessellationDomainOriginStateCreateInfo(
     VkTessellationDomainOrigin domainOrigin
+);
+
+VkSamplerYcbcrConversionInfo vscSamplerYcbcrConversionInfo(
+    VkSamplerYcbcrConversion conversion
 );
 
 VkSamplerYcbcrConversionCreateInfo vscSamplerYcbcrConversionCreateInfo(
@@ -346,6 +537,18 @@ VkSamplerYcbcrConversionCreateInfo vscSamplerYcbcrConversionCreateInfo(
     VkChromaLocation yChromaOffset,
     VkFilter chromaFilter,
     VkBool32 forceExplicitReconstruction
+);
+
+VkBindImagePlaneMemoryInfo vscBindImagePlaneMemoryInfo(
+    VkImageAspectFlagBits planeAspect
+);
+
+VkImagePlaneMemoryRequirementsInfo vscImagePlaneMemoryRequirementsInfo(
+    VkImageAspectFlagBits planeAspect
+);
+
+VkProtectedSubmitInfo vscProtectedSubmitInfo(
+    VkBool32 protectedSubmit
 );
 
 VkSamplerReductionModeCreateInfo vscSamplerReductionModeCreateInfo(
@@ -366,13 +569,49 @@ VkDescriptorSetLayoutBindingFlagsCreateInfo vscDescriptorSetLayoutBindingFlagsCr
     const VkDescriptorBindingFlags* pBindingFlags
 );
 
+VkDescriptorSetVariableDescriptorCountAllocateInfo vscDescriptorSetVariableDescriptorCountAllocateInfo(
+    uint32_t descriptorSetCount,
+    const uint32_t* pDescriptorCounts
+);
+
+VkSubpassBeginInfo vscSubpassBeginInfo(
+    VkSubpassContents contents
+);
+
+VkSubpassEndInfo vscSubpassEndInfo(
+
+);
+
 VkSemaphoreTypeCreateInfo vscSemaphoreTypeCreateInfo(
     VkSemaphoreType semaphoreType,
     uint64_t initialValue
 );
 
+VkTimelineSemaphoreSubmitInfo vscTimelineSemaphoreSubmitInfo(
+    uint32_t waitSemaphoreValueCount,
+    const uint64_t* pWaitSemaphoreValues,
+    uint32_t signalSemaphoreValueCount,
+    const uint64_t* pSignalSemaphoreValues
+);
+
+VkSemaphoreWaitInfo vscSemaphoreWaitInfo(
+    VkSemaphoreWaitFlags flags,
+    uint32_t semaphoreCount,
+    const VkSemaphore* pSemaphores,
+    const uint64_t* pValues
+);
+
+VkSemaphoreSignalInfo vscSemaphoreSignalInfo(
+    VkSemaphore semaphore,
+    uint64_t value
+);
+
 VkImageStencilUsageCreateInfo vscImageStencilUsageCreateInfo(
     VkImageUsageFlags stencilUsage
+);
+
+VkBufferDeviceAddressInfo vscBufferDeviceAddressInfo(
+    VkBuffer buffer
 );
 
 VkBufferOpaqueCaptureAddressCreateInfo vscBufferOpaqueCaptureAddressCreateInfo(
@@ -382,6 +621,21 @@ VkBufferOpaqueCaptureAddressCreateInfo vscBufferOpaqueCaptureAddressCreateInfo(
 VkFramebufferAttachmentsCreateInfo vscFramebufferAttachmentsCreateInfo(
     uint32_t attachmentImageInfoCount,
     const VkFramebufferAttachmentImageInfo* pAttachmentImageInfos
+);
+
+VkFramebufferAttachmentImageInfo vscFramebufferAttachmentImageInfo(
+    VkImageCreateFlags flags,
+    VkImageUsageFlags usage,
+    uint32_t width,
+    uint32_t height,
+    uint32_t layerCount,
+    uint32_t viewFormatCount,
+    const VkFormat* pViewFormats
+);
+
+VkRenderPassAttachmentBeginInfo vscRenderPassAttachmentBeginInfo(
+    uint32_t attachmentCount,
+    const VkImageView* pAttachments
 );
 
 VkPipelineCreationFeedbackCreateInfo vscPipelineCreationFeedbackCreateInfo(
@@ -394,12 +648,74 @@ VkPipelineShaderStageRequiredSubgroupSizeCreateInfo vscPipelineShaderStageRequir
     uint32_t requiredSubgroupSize
 );
 
+VkMemoryOpaqueCaptureAddressAllocateInfo vscMemoryOpaqueCaptureAddressAllocateInfo(
+    uint64_t opaqueCaptureAddress
+);
+
+VkDeviceMemoryOpaqueCaptureAddressInfo vscDeviceMemoryOpaqueCaptureAddressInfo(
+    VkDeviceMemory memory
+);
+
+VkDependencyInfo vscDependencyInfo(
+    VkDependencyFlags dependencyFlags,
+    uint32_t memoryBarrierCount,
+    const VkMemoryBarrier2* pMemoryBarriers,
+    uint32_t bufferMemoryBarrierCount,
+    const VkBufferMemoryBarrier2* pBufferMemoryBarriers,
+    uint32_t imageMemoryBarrierCount,
+    const VkImageMemoryBarrier2* pImageMemoryBarriers
+);
+
+VkSemaphoreSubmitInfo vscSemaphoreSubmitInfo(
+    VkSemaphore semaphore,
+    uint64_t value,
+    VkPipelineStageFlags2 stageMask,
+    uint32_t deviceIndex
+);
+
+VkCommandBufferSubmitInfo vscCommandBufferSubmitInfo(
+    VkCommandBuffer commandBuffer,
+    uint32_t deviceMask
+);
+
 VkPipelineRenderingCreateInfo vscPipelineRenderingCreateInfo(
     uint32_t viewMask,
     uint32_t colorAttachmentCount,
     const VkFormat* pColorAttachmentFormats,
     VkFormat depthAttachmentFormat,
     VkFormat stencilAttachmentFormat
+);
+
+VkRenderingInfo vscRenderingInfo(
+    VkRenderingFlags flags,
+    VkRect2D renderArea,
+    uint32_t layerCount,
+    uint32_t viewMask,
+    uint32_t colorAttachmentCount,
+    const VkRenderingAttachmentInfo* pColorAttachments,
+    const VkRenderingAttachmentInfo* pDepthAttachment,
+    const VkRenderingAttachmentInfo* pStencilAttachment
+);
+
+VkRenderingAttachmentInfo vscRenderingAttachmentInfo(
+    VkImageView imageView,
+    VkImageLayout imageLayout,
+    VkResolveModeFlagBits resolveMode,
+    VkImageView resolveImageView,
+    VkImageLayout resolveImageLayout,
+    VkAttachmentLoadOp loadOp,
+    VkAttachmentStoreOp storeOp,
+    VkClearValue clearValue
+);
+
+VkCommandBufferInheritanceRenderingInfo vscCommandBufferInheritanceRenderingInfo(
+    VkRenderingFlags flags,
+    uint32_t viewMask,
+    uint32_t colorAttachmentCount,
+    const VkFormat* pColorAttachmentFormats,
+    VkFormat depthAttachmentFormat,
+    VkFormat stencilAttachmentFormat,
+    VkSampleCountFlagBits rasterizationSamples
 );
 
 #endif

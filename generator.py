@@ -37,7 +37,7 @@ for typedef in xml_data.getroot().find("./types"):
     type_name = typedef.get('name')
 
     if not type_name.startswith("Vk"): continue
-    if not type_name.endswith("CreateInfo"): continue
+    if not type_name.endswith("Info"): continue
     if type_name not in vk_header_text: continue
 
     sType = ""
@@ -55,20 +55,23 @@ for typedef in xml_data.getroot().find("./types"):
 
     if [m for m in members if "[" in m["name"]]: continue
 
+    has_sType = bool([m for m in members if m["name"] == "sType"])
+    members = [m for m in members if m["name"] != "sType"]
+    
+    has_pNext = bool([m for m in members if m["name"] == "pNext"])
+    members = [m for m in members if m["name"] != "pNext"]
+
     declaration = f"{type_name} {type_name.replace('Vk', 'vsc')}(\n"
-    declaration += ",\n".join([f"    {member['type']} {member['name']}" for member in members[2:]])
+    declaration += ",\n".join([f"    {member['type']} {member['name']}" for member in members])
     declaration += "\n)"
 
     header_text += f"{declaration};\n\n"
 
     source_text += f"{declaration} {{\n"
     source_text += f"    return ({type_name}){{\n"
-    source_text += f"        .sType = {sType},\n"
-    source_text += f"        .pNext = NULL,\n"
-    source_text += "".join([
-        f"        .{member['name']} = {member['name']},\n"
-        for member in members[2:]
-    ])
+    if has_sType: source_text += f"        .sType = {sType},\n"
+    if has_pNext: source_text += f"        .pNext = NULL,\n"
+    source_text += "".join([f"        .{member['name']} = {member['name']},\n" for member in members])
     source_text += "    };\n"
     source_text += "}\n\n"
 
@@ -76,5 +79,3 @@ header_text += "#endif"
 
 header_path.write_text(header_text)
 source_path.write_text(source_text)
-
-# print(xml_data.getroot().find("types"))
