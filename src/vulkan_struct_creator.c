@@ -1076,13 +1076,6 @@ VkDevicePrivateDataCreateInfo vscDevicePrivateDataCreateInfo(
     };
 }
 
-VkDevicePrivateDataCreateInfoEXT vscDevicePrivateDataCreateInfoEXT(
-
-) {
-    return (VkDevicePrivateDataCreateInfoEXT){
-    };
-}
-
 VkPrivateDataSlotCreateInfo vscPrivateDataSlotCreateInfo(
     VkPrivateDataSlotCreateFlags flags
 ) {
@@ -1090,13 +1083,6 @@ VkPrivateDataSlotCreateInfo vscPrivateDataSlotCreateInfo(
         .sType = VK_STRUCTURE_TYPE_PRIVATE_DATA_SLOT_CREATE_INFO,
         .pNext = NULL,
         .flags = flags,
-    };
-}
-
-VkPrivateDataSlotCreateInfoEXT vscPrivateDataSlotCreateInfoEXT(
-
-) {
-    return (VkPrivateDataSlotCreateInfoEXT){
     };
 }
 
@@ -1220,13 +1206,6 @@ VkPhysicalDeviceImageFormatInfo2 vscPhysicalDeviceImageFormatInfo2(
     };
 }
 
-VkPhysicalDeviceImageFormatInfo2KHR vscPhysicalDeviceImageFormatInfo2KHR(
-
-) {
-    return (VkPhysicalDeviceImageFormatInfo2KHR){
-    };
-}
-
 VkPhysicalDeviceSparseImageFormatInfo2 vscPhysicalDeviceSparseImageFormatInfo2(
     VkFormat format,
     VkImageType type,
@@ -1245,13 +1224,6 @@ VkPhysicalDeviceSparseImageFormatInfo2 vscPhysicalDeviceSparseImageFormatInfo2(
     };
 }
 
-VkPhysicalDeviceSparseImageFormatInfo2KHR vscPhysicalDeviceSparseImageFormatInfo2KHR(
-
-) {
-    return (VkPhysicalDeviceSparseImageFormatInfo2KHR){
-    };
-}
-
 VkPhysicalDeviceExternalImageFormatInfo vscPhysicalDeviceExternalImageFormatInfo(
     VkExternalMemoryHandleTypeFlagBits handleType
 ) {
@@ -1259,13 +1231,6 @@ VkPhysicalDeviceExternalImageFormatInfo vscPhysicalDeviceExternalImageFormatInfo
         .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO,
         .pNext = NULL,
         .handleType = handleType,
-    };
-}
-
-VkPhysicalDeviceExternalImageFormatInfoKHR vscPhysicalDeviceExternalImageFormatInfoKHR(
-
-) {
-    return (VkPhysicalDeviceExternalImageFormatInfoKHR){
     };
 }
 
@@ -1283,13 +1248,6 @@ VkPhysicalDeviceExternalBufferInfo vscPhysicalDeviceExternalBufferInfo(
     };
 }
 
-VkPhysicalDeviceExternalBufferInfoKHR vscPhysicalDeviceExternalBufferInfoKHR(
-
-) {
-    return (VkPhysicalDeviceExternalBufferInfoKHR){
-    };
-}
-
 VkExternalMemoryImageCreateInfo vscExternalMemoryImageCreateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
 ) {
@@ -1297,13 +1255,6 @@ VkExternalMemoryImageCreateInfo vscExternalMemoryImageCreateInfo(
         .sType = VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO,
         .pNext = NULL,
         .handleTypes = handleTypes,
-    };
-}
-
-VkExternalMemoryImageCreateInfoKHR vscExternalMemoryImageCreateInfoKHR(
-
-) {
-    return (VkExternalMemoryImageCreateInfoKHR){
     };
 }
 
@@ -1317,13 +1268,6 @@ VkExternalMemoryBufferCreateInfo vscExternalMemoryBufferCreateInfo(
     };
 }
 
-VkExternalMemoryBufferCreateInfoKHR vscExternalMemoryBufferCreateInfoKHR(
-
-) {
-    return (VkExternalMemoryBufferCreateInfoKHR){
-    };
-}
-
 VkExportMemoryAllocateInfo vscExportMemoryAllocateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
 ) {
@@ -1331,13 +1275,6 @@ VkExportMemoryAllocateInfo vscExportMemoryAllocateInfo(
         .sType = VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO,
         .pNext = NULL,
         .handleTypes = handleTypes,
-    };
-}
-
-VkExportMemoryAllocateInfoKHR vscExportMemoryAllocateInfoKHR(
-
-) {
-    return (VkExportMemoryAllocateInfoKHR){
     };
 }
 
@@ -1375,13 +1312,6 @@ VkPhysicalDeviceExternalSemaphoreInfo vscPhysicalDeviceExternalSemaphoreInfo(
     };
 }
 
-VkPhysicalDeviceExternalSemaphoreInfoKHR vscPhysicalDeviceExternalSemaphoreInfoKHR(
-
-) {
-    return (VkPhysicalDeviceExternalSemaphoreInfoKHR){
-    };
-}
-
 VkExportSemaphoreCreateInfo vscExportSemaphoreCreateInfo(
     VkExternalSemaphoreHandleTypeFlags handleTypes
 ) {
@@ -1389,13 +1319,6 @@ VkExportSemaphoreCreateInfo vscExportSemaphoreCreateInfo(
         .sType = VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO,
         .pNext = NULL,
         .handleTypes = handleTypes,
-    };
-}
-
-VkExportSemaphoreCreateInfoKHR vscExportSemaphoreCreateInfoKHR(
-
-) {
-    return (VkExportSemaphoreCreateInfoKHR){
     };
 }
 
@@ -1437,13 +1360,6 @@ VkPhysicalDeviceExternalFenceInfo vscPhysicalDeviceExternalFenceInfo(
     };
 }
 
-VkPhysicalDeviceExternalFenceInfoKHR vscPhysicalDeviceExternalFenceInfoKHR(
-
-) {
-    return (VkPhysicalDeviceExternalFenceInfoKHR){
-    };
-}
-
 VkExportFenceCreateInfo vscExportFenceCreateInfo(
     VkExternalFenceHandleTypeFlags handleTypes
 ) {
@@ -1451,13 +1367,6 @@ VkExportFenceCreateInfo vscExportFenceCreateInfo(
         .sType = VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO,
         .pNext = NULL,
         .handleTypes = handleTypes,
-    };
-}
-
-VkExportFenceCreateInfoKHR vscExportFenceCreateInfoKHR(
-
-) {
-    return (VkExportFenceCreateInfoKHR){
     };
 }
 
@@ -1506,13 +1415,6 @@ VkRenderPassMultiviewCreateInfo vscRenderPassMultiviewCreateInfo(
         .pViewOffsets = pViewOffsets,
         .correlationMaskCount = correlationMaskCount,
         .pCorrelationMasks = pCorrelationMasks,
-    };
-}
-
-VkRenderPassMultiviewCreateInfoKHR vscRenderPassMultiviewCreateInfoKHR(
-
-) {
-    return (VkRenderPassMultiviewCreateInfoKHR){
     };
 }
 
@@ -1568,13 +1470,6 @@ VkMemoryAllocateFlagsInfo vscMemoryAllocateFlagsInfo(
     };
 }
 
-VkMemoryAllocateFlagsInfoKHR vscMemoryAllocateFlagsInfoKHR(
-
-) {
-    return (VkMemoryAllocateFlagsInfoKHR){
-    };
-}
-
 VkBindBufferMemoryInfo vscBindBufferMemoryInfo(
     VkBuffer buffer,
     VkDeviceMemory memory,
@@ -1586,13 +1481,6 @@ VkBindBufferMemoryInfo vscBindBufferMemoryInfo(
         .buffer = buffer,
         .memory = memory,
         .memoryOffset = memoryOffset,
-    };
-}
-
-VkBindBufferMemoryInfoKHR vscBindBufferMemoryInfoKHR(
-
-) {
-    return (VkBindBufferMemoryInfoKHR){
     };
 }
 
@@ -1608,13 +1496,6 @@ VkBindBufferMemoryDeviceGroupInfo vscBindBufferMemoryDeviceGroupInfo(
     };
 }
 
-VkBindBufferMemoryDeviceGroupInfoKHR vscBindBufferMemoryDeviceGroupInfoKHR(
-
-) {
-    return (VkBindBufferMemoryDeviceGroupInfoKHR){
-    };
-}
-
 VkBindImageMemoryInfo vscBindImageMemoryInfo(
     VkImage image,
     VkDeviceMemory memory,
@@ -1626,13 +1507,6 @@ VkBindImageMemoryInfo vscBindImageMemoryInfo(
         .image = image,
         .memory = memory,
         .memoryOffset = memoryOffset,
-    };
-}
-
-VkBindImageMemoryInfoKHR vscBindImageMemoryInfoKHR(
-
-) {
-    return (VkBindImageMemoryInfoKHR){
     };
 }
 
@@ -1652,13 +1526,6 @@ VkBindImageMemoryDeviceGroupInfo vscBindImageMemoryDeviceGroupInfo(
     };
 }
 
-VkBindImageMemoryDeviceGroupInfoKHR vscBindImageMemoryDeviceGroupInfoKHR(
-
-) {
-    return (VkBindImageMemoryDeviceGroupInfoKHR){
-    };
-}
-
 VkDeviceGroupRenderPassBeginInfo vscDeviceGroupRenderPassBeginInfo(
     uint32_t deviceMask,
     uint32_t deviceRenderAreaCount,
@@ -1673,13 +1540,6 @@ VkDeviceGroupRenderPassBeginInfo vscDeviceGroupRenderPassBeginInfo(
     };
 }
 
-VkDeviceGroupRenderPassBeginInfoKHR vscDeviceGroupRenderPassBeginInfoKHR(
-
-) {
-    return (VkDeviceGroupRenderPassBeginInfoKHR){
-    };
-}
-
 VkDeviceGroupCommandBufferBeginInfo vscDeviceGroupCommandBufferBeginInfo(
     uint32_t deviceMask
 ) {
@@ -1687,13 +1547,6 @@ VkDeviceGroupCommandBufferBeginInfo vscDeviceGroupCommandBufferBeginInfo(
         .sType = VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO,
         .pNext = NULL,
         .deviceMask = deviceMask,
-    };
-}
-
-VkDeviceGroupCommandBufferBeginInfoKHR vscDeviceGroupCommandBufferBeginInfoKHR(
-
-) {
-    return (VkDeviceGroupCommandBufferBeginInfoKHR){
     };
 }
 
@@ -1717,13 +1570,6 @@ VkDeviceGroupSubmitInfo vscDeviceGroupSubmitInfo(
     };
 }
 
-VkDeviceGroupSubmitInfoKHR vscDeviceGroupSubmitInfoKHR(
-
-) {
-    return (VkDeviceGroupSubmitInfoKHR){
-    };
-}
-
 VkDeviceGroupBindSparseInfo vscDeviceGroupBindSparseInfo(
     uint32_t resourceDeviceIndex,
     uint32_t memoryDeviceIndex
@@ -1733,13 +1579,6 @@ VkDeviceGroupBindSparseInfo vscDeviceGroupBindSparseInfo(
         .pNext = NULL,
         .resourceDeviceIndex = resourceDeviceIndex,
         .memoryDeviceIndex = memoryDeviceIndex,
-    };
-}
-
-VkDeviceGroupBindSparseInfoKHR vscDeviceGroupBindSparseInfoKHR(
-
-) {
-    return (VkDeviceGroupBindSparseInfoKHR){
     };
 }
 
@@ -1809,13 +1648,6 @@ VkDeviceGroupDeviceCreateInfo vscDeviceGroupDeviceCreateInfo(
     };
 }
 
-VkDeviceGroupDeviceCreateInfoKHR vscDeviceGroupDeviceCreateInfoKHR(
-
-) {
-    return (VkDeviceGroupDeviceCreateInfoKHR){
-    };
-}
-
 VkDeviceGroupSwapchainCreateInfoKHR vscDeviceGroupSwapchainCreateInfoKHR(
     VkDeviceGroupPresentModeFlagsKHR modes
 ) {
@@ -1847,13 +1679,6 @@ VkDescriptorUpdateTemplateCreateInfo vscDescriptorUpdateTemplateCreateInfo(
         .pipelineBindPoint = pipelineBindPoint,
         .pipelineLayout = pipelineLayout,
         .set = set,
-    };
-}
-
-VkDescriptorUpdateTemplateCreateInfoKHR vscDescriptorUpdateTemplateCreateInfoKHR(
-
-) {
-    return (VkDescriptorUpdateTemplateCreateInfoKHR){
     };
 }
 
@@ -1935,13 +1760,6 @@ VkRenderPassInputAttachmentAspectCreateInfo vscRenderPassInputAttachmentAspectCr
     };
 }
 
-VkRenderPassInputAttachmentAspectCreateInfoKHR vscRenderPassInputAttachmentAspectCreateInfoKHR(
-
-) {
-    return (VkRenderPassInputAttachmentAspectCreateInfoKHR){
-    };
-}
-
 VkPhysicalDeviceSurfaceInfo2KHR vscPhysicalDeviceSurfaceInfo2KHR(
     VkSurfaceKHR surface
 ) {
@@ -1974,13 +1792,6 @@ VkBufferMemoryRequirementsInfo2 vscBufferMemoryRequirementsInfo2(
     };
 }
 
-VkBufferMemoryRequirementsInfo2KHR vscBufferMemoryRequirementsInfo2KHR(
-
-) {
-    return (VkBufferMemoryRequirementsInfo2KHR){
-    };
-}
-
 VkImageMemoryRequirementsInfo2 vscImageMemoryRequirementsInfo2(
     VkImage image
 ) {
@@ -1991,13 +1802,6 @@ VkImageMemoryRequirementsInfo2 vscImageMemoryRequirementsInfo2(
     };
 }
 
-VkImageMemoryRequirementsInfo2KHR vscImageMemoryRequirementsInfo2KHR(
-
-) {
-    return (VkImageMemoryRequirementsInfo2KHR){
-    };
-}
-
 VkImageSparseMemoryRequirementsInfo2 vscImageSparseMemoryRequirementsInfo2(
     VkImage image
 ) {
@@ -2005,13 +1809,6 @@ VkImageSparseMemoryRequirementsInfo2 vscImageSparseMemoryRequirementsInfo2(
         .sType = VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2,
         .pNext = NULL,
         .image = image,
-    };
-}
-
-VkImageSparseMemoryRequirementsInfo2KHR vscImageSparseMemoryRequirementsInfo2KHR(
-
-) {
-    return (VkImageSparseMemoryRequirementsInfo2KHR){
     };
 }
 
@@ -2027,13 +1824,6 @@ VkMemoryDedicatedAllocateInfo vscMemoryDedicatedAllocateInfo(
     };
 }
 
-VkMemoryDedicatedAllocateInfoKHR vscMemoryDedicatedAllocateInfoKHR(
-
-) {
-    return (VkMemoryDedicatedAllocateInfoKHR){
-    };
-}
-
 VkImageViewUsageCreateInfo vscImageViewUsageCreateInfo(
     VkImageUsageFlags usage
 ) {
@@ -2041,13 +1831,6 @@ VkImageViewUsageCreateInfo vscImageViewUsageCreateInfo(
         .sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO,
         .pNext = NULL,
         .usage = usage,
-    };
-}
-
-VkImageViewUsageCreateInfoKHR vscImageViewUsageCreateInfoKHR(
-
-) {
-    return (VkImageViewUsageCreateInfoKHR){
     };
 }
 
@@ -2061,13 +1844,6 @@ VkPipelineTessellationDomainOriginStateCreateInfo vscPipelineTessellationDomainO
     };
 }
 
-VkPipelineTessellationDomainOriginStateCreateInfoKHR vscPipelineTessellationDomainOriginStateCreateInfoKHR(
-
-) {
-    return (VkPipelineTessellationDomainOriginStateCreateInfoKHR){
-    };
-}
-
 VkSamplerYcbcrConversionInfo vscSamplerYcbcrConversionInfo(
     VkSamplerYcbcrConversion conversion
 ) {
@@ -2075,13 +1851,6 @@ VkSamplerYcbcrConversionInfo vscSamplerYcbcrConversionInfo(
         .sType = VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO,
         .pNext = NULL,
         .conversion = conversion,
-    };
-}
-
-VkSamplerYcbcrConversionInfoKHR vscSamplerYcbcrConversionInfoKHR(
-
-) {
-    return (VkSamplerYcbcrConversionInfoKHR){
     };
 }
 
@@ -2109,13 +1878,6 @@ VkSamplerYcbcrConversionCreateInfo vscSamplerYcbcrConversionCreateInfo(
     };
 }
 
-VkSamplerYcbcrConversionCreateInfoKHR vscSamplerYcbcrConversionCreateInfoKHR(
-
-) {
-    return (VkSamplerYcbcrConversionCreateInfoKHR){
-    };
-}
-
 VkBindImagePlaneMemoryInfo vscBindImagePlaneMemoryInfo(
     VkImageAspectFlagBits planeAspect
 ) {
@@ -2126,13 +1888,6 @@ VkBindImagePlaneMemoryInfo vscBindImagePlaneMemoryInfo(
     };
 }
 
-VkBindImagePlaneMemoryInfoKHR vscBindImagePlaneMemoryInfoKHR(
-
-) {
-    return (VkBindImagePlaneMemoryInfoKHR){
-    };
-}
-
 VkImagePlaneMemoryRequirementsInfo vscImagePlaneMemoryRequirementsInfo(
     VkImageAspectFlagBits planeAspect
 ) {
@@ -2140,13 +1895,6 @@ VkImagePlaneMemoryRequirementsInfo vscImagePlaneMemoryRequirementsInfo(
         .sType = VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO,
         .pNext = NULL,
         .planeAspect = planeAspect,
-    };
-}
-
-VkImagePlaneMemoryRequirementsInfoKHR vscImagePlaneMemoryRequirementsInfoKHR(
-
-) {
-    return (VkImagePlaneMemoryRequirementsInfoKHR){
     };
 }
 
@@ -2256,13 +2004,6 @@ VkSamplerReductionModeCreateInfo vscSamplerReductionModeCreateInfo(
     };
 }
 
-VkSamplerReductionModeCreateInfoEXT vscSamplerReductionModeCreateInfoEXT(
-
-) {
-    return (VkSamplerReductionModeCreateInfoEXT){
-    };
-}
-
 VkPipelineColorBlendAdvancedStateCreateInfoEXT vscPipelineColorBlendAdvancedStateCreateInfoEXT(
     VkBool32 srcPremultiplied,
     VkBool32 dstPremultiplied,
@@ -2284,13 +2025,6 @@ VkDescriptorPoolInlineUniformBlockCreateInfo vscDescriptorPoolInlineUniformBlock
         .sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_INLINE_UNIFORM_BLOCK_CREATE_INFO,
         .pNext = NULL,
         .maxInlineUniformBlockBindings = maxInlineUniformBlockBindings,
-    };
-}
-
-VkDescriptorPoolInlineUniformBlockCreateInfoEXT vscDescriptorPoolInlineUniformBlockCreateInfoEXT(
-
-) {
-    return (VkDescriptorPoolInlineUniformBlockCreateInfoEXT){
     };
 }
 
@@ -2321,13 +2055,6 @@ VkImageFormatListCreateInfo vscImageFormatListCreateInfo(
         .pNext = NULL,
         .viewFormatCount = viewFormatCount,
         .pViewFormats = pViewFormats,
-    };
-}
-
-VkImageFormatListCreateInfoKHR vscImageFormatListCreateInfoKHR(
-
-) {
-    return (VkImageFormatListCreateInfoKHR){
     };
 }
 
@@ -2362,13 +2089,6 @@ VkDeviceQueueGlobalPriorityCreateInfoKHR vscDeviceQueueGlobalPriorityCreateInfoK
         .sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_KHR,
         .pNext = NULL,
         .globalPriority = globalPriority,
-    };
-}
-
-VkDeviceQueueGlobalPriorityCreateInfoEXT vscDeviceQueueGlobalPriorityCreateInfoEXT(
-
-) {
-    return (VkDeviceQueueGlobalPriorityCreateInfoEXT){
     };
 }
 
@@ -2448,13 +2168,6 @@ VkImportMemoryHostPointerInfoEXT vscImportMemoryHostPointerInfoEXT(
     };
 }
 
-VkCalibratedTimestampInfoEXT vscCalibratedTimestampInfoEXT(
-
-) {
-    return (VkCalibratedTimestampInfoEXT){
-    };
-}
-
 VkPipelineRasterizationConservativeStateCreateInfoEXT vscPipelineRasterizationConservativeStateCreateInfoEXT(
     VkPipelineRasterizationConservativeStateCreateFlagsEXT flags,
     VkConservativeRasterizationModeEXT conservativeRasterizationMode,
@@ -2481,13 +2194,6 @@ VkDescriptorSetLayoutBindingFlagsCreateInfo vscDescriptorSetLayoutBindingFlagsCr
     };
 }
 
-VkDescriptorSetLayoutBindingFlagsCreateInfoEXT vscDescriptorSetLayoutBindingFlagsCreateInfoEXT(
-
-) {
-    return (VkDescriptorSetLayoutBindingFlagsCreateInfoEXT){
-    };
-}
-
 VkDescriptorSetVariableDescriptorCountAllocateInfo vscDescriptorSetVariableDescriptorCountAllocateInfo(
     uint32_t descriptorSetCount,
     const uint32_t* pDescriptorCounts
@@ -2497,13 +2203,6 @@ VkDescriptorSetVariableDescriptorCountAllocateInfo vscDescriptorSetVariableDescr
         .pNext = NULL,
         .descriptorSetCount = descriptorSetCount,
         .pDescriptorCounts = pDescriptorCounts,
-    };
-}
-
-VkDescriptorSetVariableDescriptorCountAllocateInfoEXT vscDescriptorSetVariableDescriptorCountAllocateInfoEXT(
-
-) {
-    return (VkDescriptorSetVariableDescriptorCountAllocateInfoEXT){
     };
 }
 
@@ -2533,13 +2232,6 @@ VkRenderPassCreateInfo2 vscRenderPassCreateInfo2(
     };
 }
 
-VkRenderPassCreateInfo2KHR vscRenderPassCreateInfo2KHR(
-
-) {
-    return (VkRenderPassCreateInfo2KHR){
-    };
-}
-
 VkSubpassBeginInfo vscSubpassBeginInfo(
     VkSubpassContents contents
 ) {
@@ -2547,13 +2239,6 @@ VkSubpassBeginInfo vscSubpassBeginInfo(
         .sType = VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO,
         .pNext = NULL,
         .contents = contents,
-    };
-}
-
-VkSubpassBeginInfoKHR vscSubpassBeginInfoKHR(
-
-) {
-    return (VkSubpassBeginInfoKHR){
     };
 }
 
@@ -2566,13 +2251,6 @@ VkSubpassEndInfo vscSubpassEndInfo(
     };
 }
 
-VkSubpassEndInfoKHR vscSubpassEndInfoKHR(
-
-) {
-    return (VkSubpassEndInfoKHR){
-    };
-}
-
 VkSemaphoreTypeCreateInfo vscSemaphoreTypeCreateInfo(
     VkSemaphoreType semaphoreType,
     uint64_t initialValue
@@ -2582,13 +2260,6 @@ VkSemaphoreTypeCreateInfo vscSemaphoreTypeCreateInfo(
         .pNext = NULL,
         .semaphoreType = semaphoreType,
         .initialValue = initialValue,
-    };
-}
-
-VkSemaphoreTypeCreateInfoKHR vscSemaphoreTypeCreateInfoKHR(
-
-) {
-    return (VkSemaphoreTypeCreateInfoKHR){
     };
 }
 
@@ -2608,13 +2279,6 @@ VkTimelineSemaphoreSubmitInfo vscTimelineSemaphoreSubmitInfo(
     };
 }
 
-VkTimelineSemaphoreSubmitInfoKHR vscTimelineSemaphoreSubmitInfoKHR(
-
-) {
-    return (VkTimelineSemaphoreSubmitInfoKHR){
-    };
-}
-
 VkSemaphoreWaitInfo vscSemaphoreWaitInfo(
     VkSemaphoreWaitFlags flags,
     uint32_t semaphoreCount,
@@ -2631,13 +2295,6 @@ VkSemaphoreWaitInfo vscSemaphoreWaitInfo(
     };
 }
 
-VkSemaphoreWaitInfoKHR vscSemaphoreWaitInfoKHR(
-
-) {
-    return (VkSemaphoreWaitInfoKHR){
-    };
-}
-
 VkSemaphoreSignalInfo vscSemaphoreSignalInfo(
     VkSemaphore semaphore,
     uint64_t value
@@ -2647,20 +2304,6 @@ VkSemaphoreSignalInfo vscSemaphoreSignalInfo(
         .pNext = NULL,
         .semaphore = semaphore,
         .value = value,
-    };
-}
-
-VkSemaphoreSignalInfoKHR vscSemaphoreSignalInfoKHR(
-
-) {
-    return (VkSemaphoreSignalInfoKHR){
-    };
-}
-
-VkPipelineVertexInputDivisorStateCreateInfoEXT vscPipelineVertexInputDivisorStateCreateInfoEXT(
-
-) {
-    return (VkPipelineVertexInputDivisorStateCreateInfoEXT){
     };
 }
 
@@ -2960,13 +2603,6 @@ VkImageStencilUsageCreateInfo vscImageStencilUsageCreateInfo(
     };
 }
 
-VkImageStencilUsageCreateInfoEXT vscImageStencilUsageCreateInfoEXT(
-
-) {
-    return (VkImageStencilUsageCreateInfoEXT){
-    };
-}
-
 VkDeviceMemoryOverallocationCreateInfoAMD vscDeviceMemoryOverallocationCreateInfoAMD(
     VkMemoryOverallocationBehaviorAMD overallocationBehavior
 ) {
@@ -3031,20 +2667,6 @@ VkBufferDeviceAddressInfo vscBufferDeviceAddressInfo(
     };
 }
 
-VkBufferDeviceAddressInfoKHR vscBufferDeviceAddressInfoKHR(
-
-) {
-    return (VkBufferDeviceAddressInfoKHR){
-    };
-}
-
-VkBufferDeviceAddressInfoEXT vscBufferDeviceAddressInfoEXT(
-
-) {
-    return (VkBufferDeviceAddressInfoEXT){
-    };
-}
-
 VkBufferOpaqueCaptureAddressCreateInfo vscBufferOpaqueCaptureAddressCreateInfo(
     uint64_t opaqueCaptureAddress
 ) {
@@ -3052,13 +2674,6 @@ VkBufferOpaqueCaptureAddressCreateInfo vscBufferOpaqueCaptureAddressCreateInfo(
         .sType = VK_STRUCTURE_TYPE_BUFFER_OPAQUE_CAPTURE_ADDRESS_CREATE_INFO,
         .pNext = NULL,
         .opaqueCaptureAddress = opaqueCaptureAddress,
-    };
-}
-
-VkBufferOpaqueCaptureAddressCreateInfoKHR vscBufferOpaqueCaptureAddressCreateInfoKHR(
-
-) {
-    return (VkBufferOpaqueCaptureAddressCreateInfoKHR){
     };
 }
 
@@ -3094,13 +2709,6 @@ VkFramebufferAttachmentsCreateInfo vscFramebufferAttachmentsCreateInfo(
     };
 }
 
-VkFramebufferAttachmentsCreateInfoKHR vscFramebufferAttachmentsCreateInfoKHR(
-
-) {
-    return (VkFramebufferAttachmentsCreateInfoKHR){
-    };
-}
-
 VkFramebufferAttachmentImageInfo vscFramebufferAttachmentImageInfo(
     VkImageCreateFlags flags,
     VkImageUsageFlags usage,
@@ -3123,13 +2731,6 @@ VkFramebufferAttachmentImageInfo vscFramebufferAttachmentImageInfo(
     };
 }
 
-VkFramebufferAttachmentImageInfoKHR vscFramebufferAttachmentImageInfoKHR(
-
-) {
-    return (VkFramebufferAttachmentImageInfoKHR){
-    };
-}
-
 VkRenderPassAttachmentBeginInfo vscRenderPassAttachmentBeginInfo(
     uint32_t attachmentCount,
     const VkImageView* pAttachments
@@ -3139,13 +2740,6 @@ VkRenderPassAttachmentBeginInfo vscRenderPassAttachmentBeginInfo(
         .pNext = NULL,
         .attachmentCount = attachmentCount,
         .pAttachments = pAttachments,
-    };
-}
-
-VkRenderPassAttachmentBeginInfoKHR vscRenderPassAttachmentBeginInfoKHR(
-
-) {
-    return (VkRenderPassAttachmentBeginInfoKHR){
     };
 }
 
@@ -3174,13 +2768,6 @@ VkPipelineCreationFeedbackCreateInfo vscPipelineCreationFeedbackCreateInfo(
         .pPipelineCreationFeedback = pPipelineCreationFeedback,
         .pipelineStageCreationFeedbackCount = pipelineStageCreationFeedbackCount,
         .pPipelineStageCreationFeedbacks = pPipelineStageCreationFeedbacks,
-    };
-}
-
-VkPipelineCreationFeedbackCreateInfoEXT vscPipelineCreationFeedbackCreateInfoEXT(
-
-) {
-    return (VkPipelineCreationFeedbackCreateInfoEXT){
     };
 }
 
@@ -3262,13 +2849,6 @@ VkQueryPoolPerformanceQueryCreateInfoINTEL vscQueryPoolPerformanceQueryCreateInf
     };
 }
 
-VkQueryPoolCreateInfoINTEL vscQueryPoolCreateInfoINTEL(
-
-) {
-    return (VkQueryPoolCreateInfoINTEL){
-    };
-}
-
 VkPerformanceMarkerInfoINTEL vscPerformanceMarkerInfoINTEL(
     uint64_t marker
 ) {
@@ -3345,13 +2925,6 @@ VkPipelineShaderStageRequiredSubgroupSizeCreateInfo vscPipelineShaderStageRequir
     };
 }
 
-VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT vscPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT(
-
-) {
-    return (VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT){
-    };
-}
-
 VkSubpassShadingPipelineCreateInfoHUAWEI vscSubpassShadingPipelineCreateInfoHUAWEI(
     VkRenderPass renderPass,
     uint32_t subpass
@@ -3374,13 +2947,6 @@ VkMemoryOpaqueCaptureAddressAllocateInfo vscMemoryOpaqueCaptureAddressAllocateIn
     };
 }
 
-VkMemoryOpaqueCaptureAddressAllocateInfoKHR vscMemoryOpaqueCaptureAddressAllocateInfoKHR(
-
-) {
-    return (VkMemoryOpaqueCaptureAddressAllocateInfoKHR){
-    };
-}
-
 VkDeviceMemoryOpaqueCaptureAddressInfo vscDeviceMemoryOpaqueCaptureAddressInfo(
     VkDeviceMemory memory
 ) {
@@ -3388,20 +2954,6 @@ VkDeviceMemoryOpaqueCaptureAddressInfo vscDeviceMemoryOpaqueCaptureAddressInfo(
         .sType = VK_STRUCTURE_TYPE_DEVICE_MEMORY_OPAQUE_CAPTURE_ADDRESS_INFO,
         .pNext = NULL,
         .memory = memory,
-    };
-}
-
-VkDeviceMemoryOpaqueCaptureAddressInfoKHR vscDeviceMemoryOpaqueCaptureAddressInfoKHR(
-
-) {
-    return (VkDeviceMemoryOpaqueCaptureAddressInfoKHR){
-    };
-}
-
-VkPipelineRasterizationLineStateCreateInfoEXT vscPipelineRasterizationLineStateCreateInfoEXT(
-
-) {
-    return (VkPipelineRasterizationLineStateCreateInfoEXT){
     };
 }
 
@@ -3643,13 +3195,6 @@ VkCopyBufferInfo2 vscCopyBufferInfo2(
     };
 }
 
-VkCopyBufferInfo2KHR vscCopyBufferInfo2KHR(
-
-) {
-    return (VkCopyBufferInfo2KHR){
-    };
-}
-
 VkCopyImageInfo2 vscCopyImageInfo2(
     VkImage srcImage,
     VkImageLayout srcImageLayout,
@@ -3667,13 +3212,6 @@ VkCopyImageInfo2 vscCopyImageInfo2(
         .dstImageLayout = dstImageLayout,
         .regionCount = regionCount,
         .pRegions = pRegions,
-    };
-}
-
-VkCopyImageInfo2KHR vscCopyImageInfo2KHR(
-
-) {
-    return (VkCopyImageInfo2KHR){
     };
 }
 
@@ -3699,13 +3237,6 @@ VkBlitImageInfo2 vscBlitImageInfo2(
     };
 }
 
-VkBlitImageInfo2KHR vscBlitImageInfo2KHR(
-
-) {
-    return (VkBlitImageInfo2KHR){
-    };
-}
-
 VkCopyBufferToImageInfo2 vscCopyBufferToImageInfo2(
     VkBuffer srcBuffer,
     VkImage dstImage,
@@ -3721,13 +3252,6 @@ VkCopyBufferToImageInfo2 vscCopyBufferToImageInfo2(
         .dstImageLayout = dstImageLayout,
         .regionCount = regionCount,
         .pRegions = pRegions,
-    };
-}
-
-VkCopyBufferToImageInfo2KHR vscCopyBufferToImageInfo2KHR(
-
-) {
-    return (VkCopyBufferToImageInfo2KHR){
     };
 }
 
@@ -3749,13 +3273,6 @@ VkCopyImageToBufferInfo2 vscCopyImageToBufferInfo2(
     };
 }
 
-VkCopyImageToBufferInfo2KHR vscCopyImageToBufferInfo2KHR(
-
-) {
-    return (VkCopyImageToBufferInfo2KHR){
-    };
-}
-
 VkResolveImageInfo2 vscResolveImageInfo2(
     VkImage srcImage,
     VkImageLayout srcImageLayout,
@@ -3773,13 +3290,6 @@ VkResolveImageInfo2 vscResolveImageInfo2(
         .dstImageLayout = dstImageLayout,
         .regionCount = regionCount,
         .pRegions = pRegions,
-    };
-}
-
-VkResolveImageInfo2KHR vscResolveImageInfo2KHR(
-
-) {
-    return (VkResolveImageInfo2KHR){
     };
 }
 
@@ -3806,13 +3316,6 @@ VkAccelerationStructureBuildSizesInfoKHR vscAccelerationStructureBuildSizesInfoK
         .accelerationStructureSize = accelerationStructureSize,
         .updateScratchSize = updateScratchSize,
         .buildScratchSize = buildScratchSize,
-    };
-}
-
-VkMutableDescriptorTypeCreateInfoVALVE vscMutableDescriptorTypeCreateInfoVALVE(
-
-) {
-    return (VkMutableDescriptorTypeCreateInfoVALVE){
     };
 }
 
@@ -3860,13 +3363,6 @@ VkDependencyInfo vscDependencyInfo(
     };
 }
 
-VkDependencyInfoKHR vscDependencyInfoKHR(
-
-) {
-    return (VkDependencyInfoKHR){
-    };
-}
-
 VkSemaphoreSubmitInfo vscSemaphoreSubmitInfo(
     VkSemaphore semaphore,
     uint64_t value,
@@ -3883,13 +3379,6 @@ VkSemaphoreSubmitInfo vscSemaphoreSubmitInfo(
     };
 }
 
-VkSemaphoreSubmitInfoKHR vscSemaphoreSubmitInfoKHR(
-
-) {
-    return (VkSemaphoreSubmitInfoKHR){
-    };
-}
-
 VkCommandBufferSubmitInfo vscCommandBufferSubmitInfo(
     VkCommandBuffer commandBuffer,
     uint32_t deviceMask
@@ -3899,13 +3388,6 @@ VkCommandBufferSubmitInfo vscCommandBufferSubmitInfo(
         .pNext = NULL,
         .commandBuffer = commandBuffer,
         .deviceMask = deviceMask,
-    };
-}
-
-VkCommandBufferSubmitInfoKHR vscCommandBufferSubmitInfoKHR(
-
-) {
-    return (VkCommandBufferSubmitInfoKHR){
     };
 }
 
@@ -3928,13 +3410,6 @@ VkSubmitInfo2 vscSubmitInfo2(
         .pCommandBufferInfos = pCommandBufferInfos,
         .signalSemaphoreInfoCount = signalSemaphoreInfoCount,
         .pSignalSemaphoreInfos = pSignalSemaphoreInfos,
-    };
-}
-
-VkSubmitInfo2KHR vscSubmitInfo2KHR(
-
-) {
-    return (VkSubmitInfo2KHR){
     };
 }
 
@@ -4060,13 +3535,6 @@ VkPipelineRenderingCreateInfo vscPipelineRenderingCreateInfo(
     };
 }
 
-VkPipelineRenderingCreateInfoKHR vscPipelineRenderingCreateInfoKHR(
-
-) {
-    return (VkPipelineRenderingCreateInfoKHR){
-    };
-}
-
 VkRenderingInfo vscRenderingInfo(
     VkRenderingFlags flags,
     VkRect2D renderArea,
@@ -4091,13 +3559,6 @@ VkRenderingInfo vscRenderingInfo(
     };
 }
 
-VkRenderingInfoKHR vscRenderingInfoKHR(
-
-) {
-    return (VkRenderingInfoKHR){
-    };
-}
-
 VkRenderingAttachmentInfo vscRenderingAttachmentInfo(
     VkImageView imageView,
     VkImageLayout imageLayout,
@@ -4119,13 +3580,6 @@ VkRenderingAttachmentInfo vscRenderingAttachmentInfo(
         .loadOp = loadOp,
         .storeOp = storeOp,
         .clearValue = clearValue,
-    };
-}
-
-VkRenderingAttachmentInfoKHR vscRenderingAttachmentInfoKHR(
-
-) {
-    return (VkRenderingAttachmentInfoKHR){
     };
 }
 
@@ -4177,13 +3631,6 @@ VkCommandBufferInheritanceRenderingInfo vscCommandBufferInheritanceRenderingInfo
     };
 }
 
-VkCommandBufferInheritanceRenderingInfoKHR vscCommandBufferInheritanceRenderingInfoKHR(
-
-) {
-    return (VkCommandBufferInheritanceRenderingInfoKHR){
-    };
-}
-
 VkAttachmentSampleCountInfoAMD vscAttachmentSampleCountInfoAMD(
     uint32_t colorAttachmentCount,
     const VkSampleCountFlagBits* pColorAttachmentSamples,
@@ -4195,13 +3642,6 @@ VkAttachmentSampleCountInfoAMD vscAttachmentSampleCountInfoAMD(
         .colorAttachmentCount = colorAttachmentCount,
         .pColorAttachmentSamples = pColorAttachmentSamples,
         .depthStencilAttachmentSamples = depthStencilAttachmentSamples,
-    };
-}
-
-VkAttachmentSampleCountInfoNV vscAttachmentSampleCountInfoNV(
-
-) {
-    return (VkAttachmentSampleCountInfoNV){
     };
 }
 

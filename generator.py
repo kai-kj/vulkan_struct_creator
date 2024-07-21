@@ -44,6 +44,7 @@ for typedef in xml_data.getroot().find("./types"):
 
     if "alias" in typedef.keys():
         header_text += f"#define {type_name.replace('Vk', 'vsc')} {typedef.get('alias').replace('Vk', 'vsc')}\n\n"
+        continue
 
     sType = ""
     members = []

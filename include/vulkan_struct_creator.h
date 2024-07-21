@@ -492,19 +492,11 @@ VkDevicePrivateDataCreateInfo vscDevicePrivateDataCreateInfo(
 
 #define vscDevicePrivateDataCreateInfoEXT vscDevicePrivateDataCreateInfo
 
-VkDevicePrivateDataCreateInfoEXT vscDevicePrivateDataCreateInfoEXT(
-
-);
-
 VkPrivateDataSlotCreateInfo vscPrivateDataSlotCreateInfo(
     VkPrivateDataSlotCreateFlags flags
 );
 
 #define vscPrivateDataSlotCreateInfoEXT vscPrivateDataSlotCreateInfo
-
-VkPrivateDataSlotCreateInfoEXT vscPrivateDataSlotCreateInfoEXT(
-
-);
 
 VkGraphicsShaderGroupCreateInfoNV vscGraphicsShaderGroupCreateInfoNV(
     uint32_t stageCount,
@@ -562,10 +554,6 @@ VkPhysicalDeviceImageFormatInfo2 vscPhysicalDeviceImageFormatInfo2(
 
 #define vscPhysicalDeviceImageFormatInfo2KHR vscPhysicalDeviceImageFormatInfo2
 
-VkPhysicalDeviceImageFormatInfo2KHR vscPhysicalDeviceImageFormatInfo2KHR(
-
-);
-
 VkPhysicalDeviceSparseImageFormatInfo2 vscPhysicalDeviceSparseImageFormatInfo2(
     VkFormat format,
     VkImageType type,
@@ -576,19 +564,11 @@ VkPhysicalDeviceSparseImageFormatInfo2 vscPhysicalDeviceSparseImageFormatInfo2(
 
 #define vscPhysicalDeviceSparseImageFormatInfo2KHR vscPhysicalDeviceSparseImageFormatInfo2
 
-VkPhysicalDeviceSparseImageFormatInfo2KHR vscPhysicalDeviceSparseImageFormatInfo2KHR(
-
-);
-
 VkPhysicalDeviceExternalImageFormatInfo vscPhysicalDeviceExternalImageFormatInfo(
     VkExternalMemoryHandleTypeFlagBits handleType
 );
 
 #define vscPhysicalDeviceExternalImageFormatInfoKHR vscPhysicalDeviceExternalImageFormatInfo
-
-VkPhysicalDeviceExternalImageFormatInfoKHR vscPhysicalDeviceExternalImageFormatInfoKHR(
-
-);
 
 VkPhysicalDeviceExternalBufferInfo vscPhysicalDeviceExternalBufferInfo(
     VkBufferCreateFlags flags,
@@ -598,19 +578,11 @@ VkPhysicalDeviceExternalBufferInfo vscPhysicalDeviceExternalBufferInfo(
 
 #define vscPhysicalDeviceExternalBufferInfoKHR vscPhysicalDeviceExternalBufferInfo
 
-VkPhysicalDeviceExternalBufferInfoKHR vscPhysicalDeviceExternalBufferInfoKHR(
-
-);
-
 VkExternalMemoryImageCreateInfo vscExternalMemoryImageCreateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
 );
 
 #define vscExternalMemoryImageCreateInfoKHR vscExternalMemoryImageCreateInfo
-
-VkExternalMemoryImageCreateInfoKHR vscExternalMemoryImageCreateInfoKHR(
-
-);
 
 VkExternalMemoryBufferCreateInfo vscExternalMemoryBufferCreateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
@@ -618,19 +590,11 @@ VkExternalMemoryBufferCreateInfo vscExternalMemoryBufferCreateInfo(
 
 #define vscExternalMemoryBufferCreateInfoKHR vscExternalMemoryBufferCreateInfo
 
-VkExternalMemoryBufferCreateInfoKHR vscExternalMemoryBufferCreateInfoKHR(
-
-);
-
 VkExportMemoryAllocateInfo vscExportMemoryAllocateInfo(
     VkExternalMemoryHandleTypeFlags handleTypes
 );
 
 #define vscExportMemoryAllocateInfoKHR vscExportMemoryAllocateInfo
-
-VkExportMemoryAllocateInfoKHR vscExportMemoryAllocateInfoKHR(
-
-);
 
 VkImportMemoryFdInfoKHR vscImportMemoryFdInfoKHR(
     VkExternalMemoryHandleTypeFlagBits handleType,
@@ -648,19 +612,11 @@ VkPhysicalDeviceExternalSemaphoreInfo vscPhysicalDeviceExternalSemaphoreInfo(
 
 #define vscPhysicalDeviceExternalSemaphoreInfoKHR vscPhysicalDeviceExternalSemaphoreInfo
 
-VkPhysicalDeviceExternalSemaphoreInfoKHR vscPhysicalDeviceExternalSemaphoreInfoKHR(
-
-);
-
 VkExportSemaphoreCreateInfo vscExportSemaphoreCreateInfo(
     VkExternalSemaphoreHandleTypeFlags handleTypes
 );
 
 #define vscExportSemaphoreCreateInfoKHR vscExportSemaphoreCreateInfo
-
-VkExportSemaphoreCreateInfoKHR vscExportSemaphoreCreateInfoKHR(
-
-);
 
 VkImportSemaphoreFdInfoKHR vscImportSemaphoreFdInfoKHR(
     VkSemaphore semaphore,
@@ -680,19 +636,11 @@ VkPhysicalDeviceExternalFenceInfo vscPhysicalDeviceExternalFenceInfo(
 
 #define vscPhysicalDeviceExternalFenceInfoKHR vscPhysicalDeviceExternalFenceInfo
 
-VkPhysicalDeviceExternalFenceInfoKHR vscPhysicalDeviceExternalFenceInfoKHR(
-
-);
-
 VkExportFenceCreateInfo vscExportFenceCreateInfo(
     VkExternalFenceHandleTypeFlags handleTypes
 );
 
 #define vscExportFenceCreateInfoKHR vscExportFenceCreateInfo
-
-VkExportFenceCreateInfoKHR vscExportFenceCreateInfoKHR(
-
-);
 
 VkImportFenceFdInfoKHR vscImportFenceFdInfoKHR(
     VkFence fence,
@@ -717,10 +665,6 @@ VkRenderPassMultiviewCreateInfo vscRenderPassMultiviewCreateInfo(
 
 #define vscRenderPassMultiviewCreateInfoKHR vscRenderPassMultiviewCreateInfo
 
-VkRenderPassMultiviewCreateInfoKHR vscRenderPassMultiviewCreateInfoKHR(
-
-);
-
 VkDisplayPowerInfoEXT vscDisplayPowerInfoEXT(
     VkDisplayPowerStateEXT powerState
 );
@@ -744,10 +688,6 @@ VkMemoryAllocateFlagsInfo vscMemoryAllocateFlagsInfo(
 
 #define vscMemoryAllocateFlagsInfoKHR vscMemoryAllocateFlagsInfo
 
-VkMemoryAllocateFlagsInfoKHR vscMemoryAllocateFlagsInfoKHR(
-
-);
-
 VkBindBufferMemoryInfo vscBindBufferMemoryInfo(
     VkBuffer buffer,
     VkDeviceMemory memory,
@@ -756,20 +696,12 @@ VkBindBufferMemoryInfo vscBindBufferMemoryInfo(
 
 #define vscBindBufferMemoryInfoKHR vscBindBufferMemoryInfo
 
-VkBindBufferMemoryInfoKHR vscBindBufferMemoryInfoKHR(
-
-);
-
 VkBindBufferMemoryDeviceGroupInfo vscBindBufferMemoryDeviceGroupInfo(
     uint32_t deviceIndexCount,
     const uint32_t* pDeviceIndices
 );
 
 #define vscBindBufferMemoryDeviceGroupInfoKHR vscBindBufferMemoryDeviceGroupInfo
-
-VkBindBufferMemoryDeviceGroupInfoKHR vscBindBufferMemoryDeviceGroupInfoKHR(
-
-);
 
 VkBindImageMemoryInfo vscBindImageMemoryInfo(
     VkImage image,
@@ -778,10 +710,6 @@ VkBindImageMemoryInfo vscBindImageMemoryInfo(
 );
 
 #define vscBindImageMemoryInfoKHR vscBindImageMemoryInfo
-
-VkBindImageMemoryInfoKHR vscBindImageMemoryInfoKHR(
-
-);
 
 VkBindImageMemoryDeviceGroupInfo vscBindImageMemoryDeviceGroupInfo(
     uint32_t deviceIndexCount,
@@ -792,10 +720,6 @@ VkBindImageMemoryDeviceGroupInfo vscBindImageMemoryDeviceGroupInfo(
 
 #define vscBindImageMemoryDeviceGroupInfoKHR vscBindImageMemoryDeviceGroupInfo
 
-VkBindImageMemoryDeviceGroupInfoKHR vscBindImageMemoryDeviceGroupInfoKHR(
-
-);
-
 VkDeviceGroupRenderPassBeginInfo vscDeviceGroupRenderPassBeginInfo(
     uint32_t deviceMask,
     uint32_t deviceRenderAreaCount,
@@ -804,19 +728,11 @@ VkDeviceGroupRenderPassBeginInfo vscDeviceGroupRenderPassBeginInfo(
 
 #define vscDeviceGroupRenderPassBeginInfoKHR vscDeviceGroupRenderPassBeginInfo
 
-VkDeviceGroupRenderPassBeginInfoKHR vscDeviceGroupRenderPassBeginInfoKHR(
-
-);
-
 VkDeviceGroupCommandBufferBeginInfo vscDeviceGroupCommandBufferBeginInfo(
     uint32_t deviceMask
 );
 
 #define vscDeviceGroupCommandBufferBeginInfoKHR vscDeviceGroupCommandBufferBeginInfo
-
-VkDeviceGroupCommandBufferBeginInfoKHR vscDeviceGroupCommandBufferBeginInfoKHR(
-
-);
 
 VkDeviceGroupSubmitInfo vscDeviceGroupSubmitInfo(
     uint32_t waitSemaphoreCount,
@@ -829,20 +745,12 @@ VkDeviceGroupSubmitInfo vscDeviceGroupSubmitInfo(
 
 #define vscDeviceGroupSubmitInfoKHR vscDeviceGroupSubmitInfo
 
-VkDeviceGroupSubmitInfoKHR vscDeviceGroupSubmitInfoKHR(
-
-);
-
 VkDeviceGroupBindSparseInfo vscDeviceGroupBindSparseInfo(
     uint32_t resourceDeviceIndex,
     uint32_t memoryDeviceIndex
 );
 
 #define vscDeviceGroupBindSparseInfoKHR vscDeviceGroupBindSparseInfo
-
-VkDeviceGroupBindSparseInfoKHR vscDeviceGroupBindSparseInfoKHR(
-
-);
 
 VkImageSwapchainCreateInfoKHR vscImageSwapchainCreateInfoKHR(
     VkSwapchainKHR swapchain
@@ -874,10 +782,6 @@ VkDeviceGroupDeviceCreateInfo vscDeviceGroupDeviceCreateInfo(
 
 #define vscDeviceGroupDeviceCreateInfoKHR vscDeviceGroupDeviceCreateInfo
 
-VkDeviceGroupDeviceCreateInfoKHR vscDeviceGroupDeviceCreateInfoKHR(
-
-);
-
 VkDeviceGroupSwapchainCreateInfoKHR vscDeviceGroupSwapchainCreateInfoKHR(
     VkDeviceGroupPresentModeFlagsKHR modes
 );
@@ -894,10 +798,6 @@ VkDescriptorUpdateTemplateCreateInfo vscDescriptorUpdateTemplateCreateInfo(
 );
 
 #define vscDescriptorUpdateTemplateCreateInfoKHR vscDescriptorUpdateTemplateCreateInfo
-
-VkDescriptorUpdateTemplateCreateInfoKHR vscDescriptorUpdateTemplateCreateInfoKHR(
-
-);
 
 VkSwapchainDisplayNativeHdrCreateInfoAMD vscSwapchainDisplayNativeHdrCreateInfoAMD(
     VkBool32 localDimmingEnable
@@ -934,10 +834,6 @@ VkRenderPassInputAttachmentAspectCreateInfo vscRenderPassInputAttachmentAspectCr
 
 #define vscRenderPassInputAttachmentAspectCreateInfoKHR vscRenderPassInputAttachmentAspectCreateInfo
 
-VkRenderPassInputAttachmentAspectCreateInfoKHR vscRenderPassInputAttachmentAspectCreateInfoKHR(
-
-);
-
 VkPhysicalDeviceSurfaceInfo2KHR vscPhysicalDeviceSurfaceInfo2KHR(
     VkSurfaceKHR surface
 );
@@ -953,29 +849,17 @@ VkBufferMemoryRequirementsInfo2 vscBufferMemoryRequirementsInfo2(
 
 #define vscBufferMemoryRequirementsInfo2KHR vscBufferMemoryRequirementsInfo2
 
-VkBufferMemoryRequirementsInfo2KHR vscBufferMemoryRequirementsInfo2KHR(
-
-);
-
 VkImageMemoryRequirementsInfo2 vscImageMemoryRequirementsInfo2(
     VkImage image
 );
 
 #define vscImageMemoryRequirementsInfo2KHR vscImageMemoryRequirementsInfo2
 
-VkImageMemoryRequirementsInfo2KHR vscImageMemoryRequirementsInfo2KHR(
-
-);
-
 VkImageSparseMemoryRequirementsInfo2 vscImageSparseMemoryRequirementsInfo2(
     VkImage image
 );
 
 #define vscImageSparseMemoryRequirementsInfo2KHR vscImageSparseMemoryRequirementsInfo2
-
-VkImageSparseMemoryRequirementsInfo2KHR vscImageSparseMemoryRequirementsInfo2KHR(
-
-);
 
 VkMemoryDedicatedAllocateInfo vscMemoryDedicatedAllocateInfo(
     VkImage image,
@@ -984,19 +868,11 @@ VkMemoryDedicatedAllocateInfo vscMemoryDedicatedAllocateInfo(
 
 #define vscMemoryDedicatedAllocateInfoKHR vscMemoryDedicatedAllocateInfo
 
-VkMemoryDedicatedAllocateInfoKHR vscMemoryDedicatedAllocateInfoKHR(
-
-);
-
 VkImageViewUsageCreateInfo vscImageViewUsageCreateInfo(
     VkImageUsageFlags usage
 );
 
 #define vscImageViewUsageCreateInfoKHR vscImageViewUsageCreateInfo
-
-VkImageViewUsageCreateInfoKHR vscImageViewUsageCreateInfoKHR(
-
-);
 
 VkPipelineTessellationDomainOriginStateCreateInfo vscPipelineTessellationDomainOriginStateCreateInfo(
     VkTessellationDomainOrigin domainOrigin
@@ -1004,19 +880,11 @@ VkPipelineTessellationDomainOriginStateCreateInfo vscPipelineTessellationDomainO
 
 #define vscPipelineTessellationDomainOriginStateCreateInfoKHR vscPipelineTessellationDomainOriginStateCreateInfo
 
-VkPipelineTessellationDomainOriginStateCreateInfoKHR vscPipelineTessellationDomainOriginStateCreateInfoKHR(
-
-);
-
 VkSamplerYcbcrConversionInfo vscSamplerYcbcrConversionInfo(
     VkSamplerYcbcrConversion conversion
 );
 
 #define vscSamplerYcbcrConversionInfoKHR vscSamplerYcbcrConversionInfo
-
-VkSamplerYcbcrConversionInfoKHR vscSamplerYcbcrConversionInfoKHR(
-
-);
 
 VkSamplerYcbcrConversionCreateInfo vscSamplerYcbcrConversionCreateInfo(
     VkFormat format,
@@ -1031,29 +899,17 @@ VkSamplerYcbcrConversionCreateInfo vscSamplerYcbcrConversionCreateInfo(
 
 #define vscSamplerYcbcrConversionCreateInfoKHR vscSamplerYcbcrConversionCreateInfo
 
-VkSamplerYcbcrConversionCreateInfoKHR vscSamplerYcbcrConversionCreateInfoKHR(
-
-);
-
 VkBindImagePlaneMemoryInfo vscBindImagePlaneMemoryInfo(
     VkImageAspectFlagBits planeAspect
 );
 
 #define vscBindImagePlaneMemoryInfoKHR vscBindImagePlaneMemoryInfo
 
-VkBindImagePlaneMemoryInfoKHR vscBindImagePlaneMemoryInfoKHR(
-
-);
-
 VkImagePlaneMemoryRequirementsInfo vscImagePlaneMemoryRequirementsInfo(
     VkImageAspectFlagBits planeAspect
 );
 
 #define vscImagePlaneMemoryRequirementsInfoKHR vscImagePlaneMemoryRequirementsInfo
-
-VkImagePlaneMemoryRequirementsInfoKHR vscImagePlaneMemoryRequirementsInfoKHR(
-
-);
 
 VkConditionalRenderingBeginInfoEXT vscConditionalRenderingBeginInfoEXT(
     VkBuffer buffer,
@@ -1102,10 +958,6 @@ VkSamplerReductionModeCreateInfo vscSamplerReductionModeCreateInfo(
 
 #define vscSamplerReductionModeCreateInfoEXT vscSamplerReductionModeCreateInfo
 
-VkSamplerReductionModeCreateInfoEXT vscSamplerReductionModeCreateInfoEXT(
-
-);
-
 VkPipelineColorBlendAdvancedStateCreateInfoEXT vscPipelineColorBlendAdvancedStateCreateInfoEXT(
     VkBool32 srcPremultiplied,
     VkBool32 dstPremultiplied,
@@ -1117,10 +969,6 @@ VkDescriptorPoolInlineUniformBlockCreateInfo vscDescriptorPoolInlineUniformBlock
 );
 
 #define vscDescriptorPoolInlineUniformBlockCreateInfoEXT vscDescriptorPoolInlineUniformBlockCreateInfo
-
-VkDescriptorPoolInlineUniformBlockCreateInfoEXT vscDescriptorPoolInlineUniformBlockCreateInfoEXT(
-
-);
 
 VkPipelineCoverageModulationStateCreateInfoNV vscPipelineCoverageModulationStateCreateInfoNV(
     VkPipelineCoverageModulationStateCreateFlagsNV flags,
@@ -1137,10 +985,6 @@ VkImageFormatListCreateInfo vscImageFormatListCreateInfo(
 
 #define vscImageFormatListCreateInfoKHR vscImageFormatListCreateInfo
 
-VkImageFormatListCreateInfoKHR vscImageFormatListCreateInfoKHR(
-
-);
-
 VkValidationCacheCreateInfoEXT vscValidationCacheCreateInfoEXT(
     VkValidationCacheCreateFlagsEXT flags,
     size_t initialDataSize,
@@ -1156,10 +1000,6 @@ VkDeviceQueueGlobalPriorityCreateInfoKHR vscDeviceQueueGlobalPriorityCreateInfoK
 );
 
 #define vscDeviceQueueGlobalPriorityCreateInfoEXT vscDeviceQueueGlobalPriorityCreateInfoKHR
-
-VkDeviceQueueGlobalPriorityCreateInfoEXT vscDeviceQueueGlobalPriorityCreateInfoEXT(
-
-);
 
 VkDebugUtilsObjectNameInfoEXT vscDebugUtilsObjectNameInfoEXT(
     VkObjectType objectType,
@@ -1196,10 +1036,6 @@ VkImportMemoryHostPointerInfoEXT vscImportMemoryHostPointerInfoEXT(
 
 #define vscCalibratedTimestampInfoEXT vscCalibratedTimestampInfoKHR
 
-VkCalibratedTimestampInfoEXT vscCalibratedTimestampInfoEXT(
-
-);
-
 VkPipelineRasterizationConservativeStateCreateInfoEXT vscPipelineRasterizationConservativeStateCreateInfoEXT(
     VkPipelineRasterizationConservativeStateCreateFlagsEXT flags,
     VkConservativeRasterizationModeEXT conservativeRasterizationMode,
@@ -1213,20 +1049,12 @@ VkDescriptorSetLayoutBindingFlagsCreateInfo vscDescriptorSetLayoutBindingFlagsCr
 
 #define vscDescriptorSetLayoutBindingFlagsCreateInfoEXT vscDescriptorSetLayoutBindingFlagsCreateInfo
 
-VkDescriptorSetLayoutBindingFlagsCreateInfoEXT vscDescriptorSetLayoutBindingFlagsCreateInfoEXT(
-
-);
-
 VkDescriptorSetVariableDescriptorCountAllocateInfo vscDescriptorSetVariableDescriptorCountAllocateInfo(
     uint32_t descriptorSetCount,
     const uint32_t* pDescriptorCounts
 );
 
 #define vscDescriptorSetVariableDescriptorCountAllocateInfoEXT vscDescriptorSetVariableDescriptorCountAllocateInfo
-
-VkDescriptorSetVariableDescriptorCountAllocateInfoEXT vscDescriptorSetVariableDescriptorCountAllocateInfoEXT(
-
-);
 
 VkRenderPassCreateInfo2 vscRenderPassCreateInfo2(
     VkRenderPassCreateFlags flags,
@@ -1242,19 +1070,11 @@ VkRenderPassCreateInfo2 vscRenderPassCreateInfo2(
 
 #define vscRenderPassCreateInfo2KHR vscRenderPassCreateInfo2
 
-VkRenderPassCreateInfo2KHR vscRenderPassCreateInfo2KHR(
-
-);
-
 VkSubpassBeginInfo vscSubpassBeginInfo(
     VkSubpassContents contents
 );
 
 #define vscSubpassBeginInfoKHR vscSubpassBeginInfo
-
-VkSubpassBeginInfoKHR vscSubpassBeginInfoKHR(
-
-);
 
 VkSubpassEndInfo vscSubpassEndInfo(
 
@@ -1262,20 +1082,12 @@ VkSubpassEndInfo vscSubpassEndInfo(
 
 #define vscSubpassEndInfoKHR vscSubpassEndInfo
 
-VkSubpassEndInfoKHR vscSubpassEndInfoKHR(
-
-);
-
 VkSemaphoreTypeCreateInfo vscSemaphoreTypeCreateInfo(
     VkSemaphoreType semaphoreType,
     uint64_t initialValue
 );
 
 #define vscSemaphoreTypeCreateInfoKHR vscSemaphoreTypeCreateInfo
-
-VkSemaphoreTypeCreateInfoKHR vscSemaphoreTypeCreateInfoKHR(
-
-);
 
 VkTimelineSemaphoreSubmitInfo vscTimelineSemaphoreSubmitInfo(
     uint32_t waitSemaphoreValueCount,
@@ -1286,10 +1098,6 @@ VkTimelineSemaphoreSubmitInfo vscTimelineSemaphoreSubmitInfo(
 
 #define vscTimelineSemaphoreSubmitInfoKHR vscTimelineSemaphoreSubmitInfo
 
-VkTimelineSemaphoreSubmitInfoKHR vscTimelineSemaphoreSubmitInfoKHR(
-
-);
-
 VkSemaphoreWaitInfo vscSemaphoreWaitInfo(
     VkSemaphoreWaitFlags flags,
     uint32_t semaphoreCount,
@@ -1299,10 +1107,6 @@ VkSemaphoreWaitInfo vscSemaphoreWaitInfo(
 
 #define vscSemaphoreWaitInfoKHR vscSemaphoreWaitInfo
 
-VkSemaphoreWaitInfoKHR vscSemaphoreWaitInfoKHR(
-
-);
-
 VkSemaphoreSignalInfo vscSemaphoreSignalInfo(
     VkSemaphore semaphore,
     uint64_t value
@@ -1310,15 +1114,7 @@ VkSemaphoreSignalInfo vscSemaphoreSignalInfo(
 
 #define vscSemaphoreSignalInfoKHR vscSemaphoreSignalInfo
 
-VkSemaphoreSignalInfoKHR vscSemaphoreSignalInfoKHR(
-
-);
-
 #define vscPipelineVertexInputDivisorStateCreateInfoEXT vscPipelineVertexInputDivisorStateCreateInfoKHR
-
-VkPipelineVertexInputDivisorStateCreateInfoEXT vscPipelineVertexInputDivisorStateCreateInfoEXT(
-
-);
 
 VkPhysicalDevicePCIBusInfoPropertiesEXT vscPhysicalDevicePCIBusInfoPropertiesEXT(
     uint32_t pciDomain,
@@ -1451,10 +1247,6 @@ VkImageStencilUsageCreateInfo vscImageStencilUsageCreateInfo(
 
 #define vscImageStencilUsageCreateInfoEXT vscImageStencilUsageCreateInfo
 
-VkImageStencilUsageCreateInfoEXT vscImageStencilUsageCreateInfoEXT(
-
-);
-
 VkDeviceMemoryOverallocationCreateInfoAMD vscDeviceMemoryOverallocationCreateInfoAMD(
     VkMemoryOverallocationBehaviorAMD overallocationBehavior
 );
@@ -1483,25 +1275,13 @@ VkBufferDeviceAddressInfo vscBufferDeviceAddressInfo(
 
 #define vscBufferDeviceAddressInfoKHR vscBufferDeviceAddressInfo
 
-VkBufferDeviceAddressInfoKHR vscBufferDeviceAddressInfoKHR(
-
-);
-
 #define vscBufferDeviceAddressInfoEXT vscBufferDeviceAddressInfo
-
-VkBufferDeviceAddressInfoEXT vscBufferDeviceAddressInfoEXT(
-
-);
 
 VkBufferOpaqueCaptureAddressCreateInfo vscBufferOpaqueCaptureAddressCreateInfo(
     uint64_t opaqueCaptureAddress
 );
 
 #define vscBufferOpaqueCaptureAddressCreateInfoKHR vscBufferOpaqueCaptureAddressCreateInfo
-
-VkBufferOpaqueCaptureAddressCreateInfoKHR vscBufferOpaqueCaptureAddressCreateInfoKHR(
-
-);
 
 VkBufferDeviceAddressCreateInfoEXT vscBufferDeviceAddressCreateInfoEXT(
     VkDeviceAddress deviceAddress
@@ -1518,10 +1298,6 @@ VkFramebufferAttachmentsCreateInfo vscFramebufferAttachmentsCreateInfo(
 
 #define vscFramebufferAttachmentsCreateInfoKHR vscFramebufferAttachmentsCreateInfo
 
-VkFramebufferAttachmentsCreateInfoKHR vscFramebufferAttachmentsCreateInfoKHR(
-
-);
-
 VkFramebufferAttachmentImageInfo vscFramebufferAttachmentImageInfo(
     VkImageCreateFlags flags,
     VkImageUsageFlags usage,
@@ -1534,20 +1310,12 @@ VkFramebufferAttachmentImageInfo vscFramebufferAttachmentImageInfo(
 
 #define vscFramebufferAttachmentImageInfoKHR vscFramebufferAttachmentImageInfo
 
-VkFramebufferAttachmentImageInfoKHR vscFramebufferAttachmentImageInfoKHR(
-
-);
-
 VkRenderPassAttachmentBeginInfo vscRenderPassAttachmentBeginInfo(
     uint32_t attachmentCount,
     const VkImageView* pAttachments
 );
 
 #define vscRenderPassAttachmentBeginInfoKHR vscRenderPassAttachmentBeginInfo
-
-VkRenderPassAttachmentBeginInfoKHR vscRenderPassAttachmentBeginInfoKHR(
-
-);
 
 VkImageViewHandleInfoNVX vscImageViewHandleInfoNVX(
     VkImageView imageView,
@@ -1562,10 +1330,6 @@ VkPipelineCreationFeedbackCreateInfo vscPipelineCreationFeedbackCreateInfo(
 );
 
 #define vscPipelineCreationFeedbackCreateInfoEXT vscPipelineCreationFeedbackCreateInfo
-
-VkPipelineCreationFeedbackCreateInfoEXT vscPipelineCreationFeedbackCreateInfoEXT(
-
-);
 
 VkQueryPoolPerformanceCreateInfoKHR vscQueryPoolPerformanceCreateInfoKHR(
     uint32_t queueFamilyIndex,
@@ -1601,10 +1365,6 @@ VkQueryPoolPerformanceQueryCreateInfoINTEL vscQueryPoolPerformanceQueryCreateInf
 
 #define vscQueryPoolCreateInfoINTEL vscQueryPoolPerformanceQueryCreateInfoINTEL
 
-VkQueryPoolCreateInfoINTEL vscQueryPoolCreateInfoINTEL(
-
-);
-
 VkPerformanceMarkerInfoINTEL vscPerformanceMarkerInfoINTEL(
     uint64_t marker
 );
@@ -1638,10 +1398,6 @@ VkPipelineShaderStageRequiredSubgroupSizeCreateInfo vscPipelineShaderStageRequir
 
 #define vscPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT vscPipelineShaderStageRequiredSubgroupSizeCreateInfo
 
-VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT vscPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT(
-
-);
-
 VkSubpassShadingPipelineCreateInfoHUAWEI vscSubpassShadingPipelineCreateInfoHUAWEI(
     VkRenderPass renderPass,
     uint32_t subpass
@@ -1653,25 +1409,13 @@ VkMemoryOpaqueCaptureAddressAllocateInfo vscMemoryOpaqueCaptureAddressAllocateIn
 
 #define vscMemoryOpaqueCaptureAddressAllocateInfoKHR vscMemoryOpaqueCaptureAddressAllocateInfo
 
-VkMemoryOpaqueCaptureAddressAllocateInfoKHR vscMemoryOpaqueCaptureAddressAllocateInfoKHR(
-
-);
-
 VkDeviceMemoryOpaqueCaptureAddressInfo vscDeviceMemoryOpaqueCaptureAddressInfo(
     VkDeviceMemory memory
 );
 
 #define vscDeviceMemoryOpaqueCaptureAddressInfoKHR vscDeviceMemoryOpaqueCaptureAddressInfo
 
-VkDeviceMemoryOpaqueCaptureAddressInfoKHR vscDeviceMemoryOpaqueCaptureAddressInfoKHR(
-
-);
-
 #define vscPipelineRasterizationLineStateCreateInfoEXT vscPipelineRasterizationLineStateCreateInfoKHR
-
-VkPipelineRasterizationLineStateCreateInfoEXT vscPipelineRasterizationLineStateCreateInfoEXT(
-
-);
 
 VkPipelineCompilerControlCreateInfoAMD vscPipelineCompilerControlCreateInfoAMD(
     VkPipelineCompilerControlFlagsAMD compilerControlFlags
@@ -1777,10 +1521,6 @@ VkCopyBufferInfo2 vscCopyBufferInfo2(
 
 #define vscCopyBufferInfo2KHR vscCopyBufferInfo2
 
-VkCopyBufferInfo2KHR vscCopyBufferInfo2KHR(
-
-);
-
 VkCopyImageInfo2 vscCopyImageInfo2(
     VkImage srcImage,
     VkImageLayout srcImageLayout,
@@ -1791,10 +1531,6 @@ VkCopyImageInfo2 vscCopyImageInfo2(
 );
 
 #define vscCopyImageInfo2KHR vscCopyImageInfo2
-
-VkCopyImageInfo2KHR vscCopyImageInfo2KHR(
-
-);
 
 VkBlitImageInfo2 vscBlitImageInfo2(
     VkImage srcImage,
@@ -1808,10 +1544,6 @@ VkBlitImageInfo2 vscBlitImageInfo2(
 
 #define vscBlitImageInfo2KHR vscBlitImageInfo2
 
-VkBlitImageInfo2KHR vscBlitImageInfo2KHR(
-
-);
-
 VkCopyBufferToImageInfo2 vscCopyBufferToImageInfo2(
     VkBuffer srcBuffer,
     VkImage dstImage,
@@ -1821,10 +1553,6 @@ VkCopyBufferToImageInfo2 vscCopyBufferToImageInfo2(
 );
 
 #define vscCopyBufferToImageInfo2KHR vscCopyBufferToImageInfo2
-
-VkCopyBufferToImageInfo2KHR vscCopyBufferToImageInfo2KHR(
-
-);
 
 VkCopyImageToBufferInfo2 vscCopyImageToBufferInfo2(
     VkImage srcImage,
@@ -1836,10 +1564,6 @@ VkCopyImageToBufferInfo2 vscCopyImageToBufferInfo2(
 
 #define vscCopyImageToBufferInfo2KHR vscCopyImageToBufferInfo2
 
-VkCopyImageToBufferInfo2KHR vscCopyImageToBufferInfo2KHR(
-
-);
-
 VkResolveImageInfo2 vscResolveImageInfo2(
     VkImage srcImage,
     VkImageLayout srcImageLayout,
@@ -1850,10 +1574,6 @@ VkResolveImageInfo2 vscResolveImageInfo2(
 );
 
 #define vscResolveImageInfo2KHR vscResolveImageInfo2
-
-VkResolveImageInfo2KHR vscResolveImageInfo2KHR(
-
-);
 
 VkFragmentShadingRateAttachmentInfoKHR vscFragmentShadingRateAttachmentInfoKHR(
     const VkAttachmentReference2* pFragmentShadingRateAttachment,
@@ -1867,10 +1587,6 @@ VkAccelerationStructureBuildSizesInfoKHR vscAccelerationStructureBuildSizesInfoK
 );
 
 #define vscMutableDescriptorTypeCreateInfoVALVE vscMutableDescriptorTypeCreateInfoEXT
-
-VkMutableDescriptorTypeCreateInfoVALVE vscMutableDescriptorTypeCreateInfoVALVE(
-
-);
 
 VkPipelineViewportDepthClipControlCreateInfoEXT vscPipelineViewportDepthClipControlCreateInfoEXT(
     VkBool32 negativeOneToOne
@@ -1893,10 +1609,6 @@ VkDependencyInfo vscDependencyInfo(
 
 #define vscDependencyInfoKHR vscDependencyInfo
 
-VkDependencyInfoKHR vscDependencyInfoKHR(
-
-);
-
 VkSemaphoreSubmitInfo vscSemaphoreSubmitInfo(
     VkSemaphore semaphore,
     uint64_t value,
@@ -1906,20 +1618,12 @@ VkSemaphoreSubmitInfo vscSemaphoreSubmitInfo(
 
 #define vscSemaphoreSubmitInfoKHR vscSemaphoreSubmitInfo
 
-VkSemaphoreSubmitInfoKHR vscSemaphoreSubmitInfoKHR(
-
-);
-
 VkCommandBufferSubmitInfo vscCommandBufferSubmitInfo(
     VkCommandBuffer commandBuffer,
     uint32_t deviceMask
 );
 
 #define vscCommandBufferSubmitInfoKHR vscCommandBufferSubmitInfo
-
-VkCommandBufferSubmitInfoKHR vscCommandBufferSubmitInfoKHR(
-
-);
 
 VkSubmitInfo2 vscSubmitInfo2(
     VkSubmitFlags flags,
@@ -1932,10 +1636,6 @@ VkSubmitInfo2 vscSubmitInfo2(
 );
 
 #define vscSubmitInfo2KHR vscSubmitInfo2
-
-VkSubmitInfo2KHR vscSubmitInfo2KHR(
-
-);
 
 VkCommandBufferInheritanceViewportScissorInfoNV vscCommandBufferInheritanceViewportScissorInfoNV(
     VkBool32 viewportScissor2D,
@@ -1992,10 +1692,6 @@ VkPipelineRenderingCreateInfo vscPipelineRenderingCreateInfo(
 
 #define vscPipelineRenderingCreateInfoKHR vscPipelineRenderingCreateInfo
 
-VkPipelineRenderingCreateInfoKHR vscPipelineRenderingCreateInfoKHR(
-
-);
-
 VkRenderingInfo vscRenderingInfo(
     VkRenderingFlags flags,
     VkRect2D renderArea,
@@ -2009,10 +1705,6 @@ VkRenderingInfo vscRenderingInfo(
 
 #define vscRenderingInfoKHR vscRenderingInfo
 
-VkRenderingInfoKHR vscRenderingInfoKHR(
-
-);
-
 VkRenderingAttachmentInfo vscRenderingAttachmentInfo(
     VkImageView imageView,
     VkImageLayout imageLayout,
@@ -2025,10 +1717,6 @@ VkRenderingAttachmentInfo vscRenderingAttachmentInfo(
 );
 
 #define vscRenderingAttachmentInfoKHR vscRenderingAttachmentInfo
-
-VkRenderingAttachmentInfoKHR vscRenderingAttachmentInfoKHR(
-
-);
 
 VkRenderingFragmentShadingRateAttachmentInfoKHR vscRenderingFragmentShadingRateAttachmentInfoKHR(
     VkImageView imageView,
@@ -2053,10 +1741,6 @@ VkCommandBufferInheritanceRenderingInfo vscCommandBufferInheritanceRenderingInfo
 
 #define vscCommandBufferInheritanceRenderingInfoKHR vscCommandBufferInheritanceRenderingInfo
 
-VkCommandBufferInheritanceRenderingInfoKHR vscCommandBufferInheritanceRenderingInfoKHR(
-
-);
-
 VkAttachmentSampleCountInfoAMD vscAttachmentSampleCountInfoAMD(
     uint32_t colorAttachmentCount,
     const VkSampleCountFlagBits* pColorAttachmentSamples,
@@ -2064,10 +1748,6 @@ VkAttachmentSampleCountInfoAMD vscAttachmentSampleCountInfoAMD(
 );
 
 #define vscAttachmentSampleCountInfoNV vscAttachmentSampleCountInfoAMD
-
-VkAttachmentSampleCountInfoNV vscAttachmentSampleCountInfoNV(
-
-);
 
 VkMultiviewPerViewAttributesInfoNVX vscMultiviewPerViewAttributesInfoNVX(
     VkBool32 perViewAttributes,
