@@ -2,11 +2,8 @@ from pathlib import Path
 import requests
 from lxml import etree
 
-header_path = Path("include/vulkan_struct_creator.h")
-header_path.touch(exist_ok=True)
-
-source_path = Path("src/vulkan_struct_creator.c")
-source_path.touch(exist_ok=True)
+out_path = Path("vulkan_struct_creator.h")
+out_path.touch(exist_ok=True)
 
 tmp_path = Path("tmp")
 tmp_path.mkdir(parents=True, exist_ok=True)
@@ -30,7 +27,7 @@ header_text += "#include <vulkan/vulkan.h>\n\n"
 header_text += "#define VSC_GET_INSTANCE_PROC_ADDR(instance, name) ((PFN_##name)vkGetInstanceProcAddr(instance, #name))\n\n"
 
 source_text = ""
-source_text += "#include \"vulkan_struct_creator.h\"\n\n"
+source_text += "#ifdef VULKAN_STRUCT_CREATOR_IMPLEMENTATION\n\n"
 
 for typedef in xml_data.getroot().find("./types"):
     if not "name" in typedef.keys(): continue
@@ -81,7 +78,7 @@ for typedef in xml_data.getroot().find("./types"):
     source_text += "    };\n"
     source_text += "}\n\n"
 
-header_text += "#endif"
+header_text += "#endif\n\n"
+source_text += "#endif\n"
 
-header_path.write_text(header_text)
-source_path.write_text(source_text)
+out_path.write_text(header_text + source_text)
