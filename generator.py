@@ -27,6 +27,7 @@ header_text += "#ifndef VULKAN_STRUCT_CREATOR_H\n"
 header_text += "#define VULKAN_STRUCT_CREATOR_H\n\n"
 header_text += "#include <vulkan/vk_platform.h>\n"
 header_text += "#include <vulkan/vulkan.h>\n\n"
+header_text += "#define VSC_GET_INSTANCE_PROC_ADDR(instance, name) ((PFN_##name)vkGetInstanceProcAddr(instance, #name))\n\n"
 
 source_text = ""
 source_text += "#include \"vulkan_struct_creator.h\"\n\n"

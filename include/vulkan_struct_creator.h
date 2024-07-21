@@ -4,6 +4,8 @@
 #include <vulkan/vk_platform.h>
 #include <vulkan/vulkan.h>
 
+#define VSC_GET_INSTANCE_PROC_ADDR(instance, name) ((PFN_##name)vkGetInstanceProcAddr(instance, #name))
+
 VkApplicationInfo vscApplicationInfo(
     const char* pApplicationName,
     uint32_t applicationVersion,
