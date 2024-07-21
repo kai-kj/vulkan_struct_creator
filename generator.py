@@ -42,6 +42,9 @@ for typedef in xml_data.getroot().find("./types"):
     if not "Info" in type_name: continue
     if type_name not in vk_header_text: continue
 
+    if "alias" in typedef.keys():
+        header_text += f"#define {type_name.replace('Vk', 'vsc')} {typedef.get('alias').replace('Vk', 'vsc')}\n\n"
+
     sType = ""
     members = []
     for member in typedef:
