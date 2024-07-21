@@ -33,11 +33,12 @@ source_text += "#include \"vulkan_struct_creator.h\"\n\n"
 
 for typedef in xml_data.getroot().find("./types"):
     if not "name" in typedef.keys(): continue
+    if not typedef.get("category") == "struct": continue
 
     type_name = typedef.get('name')
 
     if not type_name.startswith("Vk"): continue
-    if not type_name.endswith("Info"): continue
+    if not "Info" in type_name: continue
     if type_name not in vk_header_text: continue
 
     sType = ""
