@@ -1,5 +1,5 @@
-#ifndef VULKAN_STRUCT_CREATOR_H
-#define VULKAN_STRUCT_CREATOR_H
+#ifndef VK_STRUCT_CREATOR_H
+#define VK_STRUCT_CREATOR_H
 
 #include <vulkan/vk_platform.h>
 #include <vulkan/vulkan.h>
@@ -1760,7 +1760,7 @@ VkImageViewMinLodCreateInfoEXT vscImageViewMinLodCreateInfoEXT(
 
 #endif
 
-#ifdef VULKAN_STRUCT_CREATOR_IMPLEMENTATION
+#ifdef VK_STRUCT_CREATOR_IMPLEMENTATION
 
 VkApplicationInfo vscApplicationInfo(
     const char* pApplicationName,
